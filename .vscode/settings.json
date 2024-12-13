@@ -2,6 +2,8 @@
     "cSpell.words": [
         "Antiforgery",
         "blazor",
-        "stylesheet"
+        "Bunit",
+        "stylesheet",
+        "Xunit"
     ]
 }
