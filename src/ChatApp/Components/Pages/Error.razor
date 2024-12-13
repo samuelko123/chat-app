@@ -4,7 +4,6 @@
 
 <PageTitle>Error</PageTitle>
 
-<h1>Error.</h1>
 <h2>An error occurred while processing your request.</h2>
 
 @if (ShowRequestId)
@@ -14,13 +13,14 @@
     </p>
 }
 
-@code{
+@code {
     [CascadingParameter]
     private HttpContext? HttpContext { get; set; }
 
     private string? RequestId { get; set; }
+    
     private bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
     protected override void OnInitialized() =>
-        RequestId = Activity.Current?.Id ?? HttpContext?.TraceIdentifier;
+    RequestId = Activity.Current?.Id ?? HttpContext?.TraceIdentifier;
 }
