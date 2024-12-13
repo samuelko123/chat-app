@@ -1,6 +1,9 @@
 namespace ChatApp;
 
 using ChatApp.Components;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 public static class Program
 {
