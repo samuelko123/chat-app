@@ -10,7 +10,7 @@ on:
       - "LICENSE"
 
 jobs:
-  build:
+  unit-test:
     runs-on: ubuntu-latest
 
     permissions:
