@@ -14,5 +14,5 @@ dotnet run --project ./src/ChatApp
 Method 2 - Run on host machine
 
 ```
-docker compose -f ./docker/docker-compose.yaml up
+docker compose -f ./docker/docker-compose.yaml up app
 ```

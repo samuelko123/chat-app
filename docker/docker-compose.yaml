@@ -1,13 +1,22 @@
 name: chat-app
 services:
-  blazor:
-    container_name: blazor
+  app:
+    container_name: app
     build:
       context: ../
       dockerfile: ./docker/Dockerfile
+      target: publish
     environment:
       ASPNETCORE_HTTP_PORTS: 5000
     ports:
       - app_protocol: http
         target: 5000
         published: 5000
+    working_dir: /app/bin
+    entrypoint: ["dotnet", "ChatApp.dll"]
+  unit-test:
+    container_name: unit-test
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+      target: test
