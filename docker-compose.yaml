@@ -4,7 +4,7 @@ services:
     container_name: blazor
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./docker/Dockerfile
     environment:
       ASPNETCORE_HTTP_PORTS: 5000
     ports:
