@@ -1,0 +1,13 @@
+name: chat-app
+services:
+  blazor:
+    container_name: blazor
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_HTTP_PORTS: 5000
+    ports:
+      - app_protocol: http
+        target: 5000
+        published: 5000
