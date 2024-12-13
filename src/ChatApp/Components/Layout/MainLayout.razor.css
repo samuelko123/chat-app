@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  align-items: center;
+
+  background-color: #123499;
+  color: #ffffff;
+
+  font-weight: bold;
+
+  height: 1rem;
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+#blazor-error-ui {
+  display: none;
+  background: #ffcc00;
+  padding: 0.5rem 1rem;
+}
+
+#blazor-error-ui .dismiss {
+  cursor: pointer;
+}
