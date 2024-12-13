@@ -11,3 +11,5 @@ services:
       - app_protocol: http
         target: 5000
         published: 5000
+    working_dir: /app/bin
+    entrypoint: ["dotnet", "ChatApp.dll"]

@@ -12,6 +12,3 @@ RUN dotnet test
 RUN dotnet clean ./src/ChatApp --output ./bin
 RUN dotnet publish ./src/ChatApp --configuration Release --output ./bin
 
-WORKDIR /app/bin
-ENTRYPOINT ["dotnet", "ChatApp.dll"]
-EXPOSE 5000
