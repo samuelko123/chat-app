@@ -16,9 +16,9 @@ main {
 }
 
 #blazor-error-ui {
-  display: none;
+  display: block;
   background: #ffcc00;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 #blazor-error-ui .dismiss {
