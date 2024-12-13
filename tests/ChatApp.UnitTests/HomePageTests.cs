@@ -1,3 +1,4 @@
+using AngleSharp.Dom;
 using ChatApp.Components.Pages;
 
 namespace ChatApp.UnitTests;
@@ -11,6 +12,7 @@ public class HomePageTests : TestContext
 		var page = RenderComponent<Home>();
 
 		// Assert
-		page.MarkupMatches("<h1>Hello World</h1>");
+		var element = page.Find("h1");
+		Assert.Equal("Hello World", element.GetInnerText());
 	}
 }
