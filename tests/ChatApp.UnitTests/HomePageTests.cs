@@ -11,6 +11,6 @@ public class HomePageTests : TestContext
 		var page = RenderComponent<Home>();
 
 		// Assert
-		page.MarkupMatches("<h1>Hello World</h1>");
+		page.MarkupMatches("<h1>Hello World</h1><p>");
 	}
 }
